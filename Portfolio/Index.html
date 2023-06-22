@@ -15,13 +15,13 @@
 </head>
 <body>
     <!-- create the nav bar -->
-        <header class="primary-header flex">
+        <header class="primary-header flex sidebar">
             <div class="logo"><h1>MAYOKUN</h1></div>
 
 
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
+            <button class="mobile-nav-toggle" id="toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
 
-            <nav>
+            <nav class="navbar"> 
                
             <ul id="primary-navigation" data-visible = "false" class="primary-navigation flex">
                     <li class="active">
@@ -53,12 +53,12 @@
             <h4>HELLO!, I'M</h4>
             <h1>ADEWOLE OLASUNKANMI(MAYOKUN)</h1>
             <p>A frontend developer with passion for creating interactive and easy to use applications on the web</p>
-            <button>Contact</button>
+            <button><a href="#contact">Contact</a></button>
           </div>
       </section>
 
       <!-- Create second section -->
-      <section class="about-section" id="about">
+      <section class="about-section section_wrapper" id="about">
         <h2>ABOUT ME</h2>
         <p>
             Hello world!, I'm Olasunkanmi, an energetic and dedicated frontend developer based in the famous African country, Nigeria.
@@ -73,7 +73,7 @@
 
      
 
-      <section class="skills-section" id="skills">
+      <section class="skills-section section_wrapper" id="skills">
 
         <h2>MY SKILLS</h2>
 
@@ -89,10 +89,13 @@
 
       <!-- Create the fourth section -->
 
-      <section class="projects-section" id="projects">
+      <section class="projects-section section_wrapper" id="projects">
         <h2>PROJECTS</h2>
       </section>
-      <section class="contact-section" id="contact">
+
+
+      <!-- create the fifth section -->
+      <section class="contact-section section_wrapper" id="contact">
         <h2>CONTACT</h2>
         <div class="contact-tile">
             <div class="contact-text">
@@ -116,7 +119,7 @@
                       <label><input type="email" name="email" placeholder="YOUR EMAIL"/></label>
                     </p>
                     <p>
-                        <label><input type="text" name="email" placeholder="YOUR MESSAGE"/></label>
+                        <label><input type="text" name="message" placeholder="YOUR MESSAGE"/></label>
                       </p>
                     <p>
                       <button type="submit">GET IN TOUCH</button>
